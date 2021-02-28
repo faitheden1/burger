@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "rest. burger app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faitheden1/burger.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "handlebars"
+  ],
+  "author": "Faith Elsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faitheden1/burger/issues"
+  },
+  "homepage": "https://github.com/faitheden1/burger#readme"
+}
