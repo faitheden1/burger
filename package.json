@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/faitheden1/burger/issues"
   },
-  "homepage": "https://github.com/faitheden1/burger#readme"
+  "homepage": "https://github.com/faitheden1/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
