@@ -1,0 +1,72 @@
+
+
+{{!-- <form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> --}}
+
+<div class="flexbox-container">
+
+        <div class="flexbox-item-1">            
+            <img src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png" alt="burgerImg" id="burgerImg">
+            <ul id="uneaten">
+                <h2> Here's a burger </h2>
+                {{#each burger}}
+                {{#unless devoured}}
+                {{!-- {{> burger/burger-block devoured=false}} --}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+
+        </div>
+
+        <div class="flexbox-item-2">
+            <h2>Choose a burger</h2>
+        <form method="POST" action="/api/burger">
+  <input type="text" name="burger_name" />
+  <input type="submit" />
+</form>
+
+
+
+    
+            
+
+          
+
+         <ol>   {{#each hbsObject}}
+        <li >{{this.burger_name}}</li>
+        <button class="devourIt" id={{id}} >devour it!</button>
+{{/each}}</ol>
+
+
+
+
+        
+            {{!-- <form class="burgerInput">
+            <input type="text" id="newBurger" name="burger_name">
+                <div class="flexbox-container">
+                    
+                    <button type="submit" id="burgerBtn">Devour Burger</button>
+
+                </div>
+            </form> --}}
+            
+        </div>
+        <div class="flexbox-item-3">
+           
+            <ul id="eaten">
+                <h2>You have devoured this burger(s): </h2>
+                {{#each burger}}
+                {{#if devoured}}
+                {{!-- > means you're looking in the partials directory --}}
+                {{!-- {{> burger/burger-block devoured=true}} --}}
+                {{/if}}
+                {{/each}}
+            </ul>
+
+        </div>
+    </div>
